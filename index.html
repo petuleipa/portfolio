@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portfolio - Petra Saharinen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-hover-pink w3-monospace">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-pink w3-monospace"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-hover-pink w3-monospace"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-pink w3-monospace"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-monospace" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">Petra Saharinen
+    </span>
+    <p class="w3-center w3-xlarge w3-animate-opacity" style="margin-top:10px;"><b>GAME DEVELOPER | PROGRAMMER</b></p>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center w3-text-white">ABOUT ME</h3>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="Images/Logos/temp.png" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+    </div>
+        <p class="w3-text-white">
+          I'm a game developer from Finland with experience and interest mainly in programming, but sometimes I also dabble in game design and graphics as a hobby. I have a background in tourism and hospitality
+          management, so I combine problem solving skills and technical knowledge with customer-oriented thinking. 
+        </p>
+
+        <p class="w3-text-white">
+          I love storytelling in games and enjoy delving into big open worlds that let you create your own path. 
+          A personal goal of mine in game development is to create these intricate worlds and tell impactful stories through my game projects. 
+        </p>
+
+      <h4 class="w3-text-white">EDUCATION: </h4>
+      <ul>
+        <li class="w3-text-white ">
+          <p>Bachelor's Degree in Business Information Technology, Kajaani University of Applied Sciences, 2023-></p>
+        </li>
+        <li class="w3-text-white">
+          <p>Tourism and Hospitality Management, Karelia University of Applied Sciences, 2017-2021</p>
+        </li>
+        <br>
+      </ul>
+  </div>
+  <h3 class="w3-center w3-text-white">TECHNICAL SKILLS</h3>
+    <div class="skills-row w3-center">
+      <span class="skill">C#</span>
+      <span class="skill">C++</span>
+      <span class="skill">Unity</span>
+      <span class="skill">Unreal Engine</span>
+      <span class="skill">Git</span>
+      <span class="skill">MS Office</span>
+    </div>
+
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-black w3-wide w3-monospace">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center w3-text-white">PROJECTS</h3>
+  <p class="w3-center w3-text-white" ><em>Store pages can be found through the links in the titles.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+      <img src="Images/Projects/JoyDepress.png" class="project-img" alt="Photo">
+      <h4 class="w3-text-white">
+        <a href="https://adaras.itch.io/joy-depress" target="_blank">JoyDepress (2025)</a>
+      </h4>
+      <p class="w3-text-white">
+        JoyDepress is a point & click trash sorting simulation game made with Unreal Engine. 
+        You must sort trash from a closed down theme park and make enough profit to expand your production and keep up with the expenses, 
+        or face the consequences of failure. 
+        <br> <br>
+        This was my first full project with Unreal Engine and I worked as a gameplay programmer focused mainly on the machinery and game logic.
+        Code was a mix of C++ and Unreal Blueprints.
+        Published in 
+        <a href="https://adaras.itch.io/joy-depress" target="_blank">itch.io</a>.
+      </p>
+    </div>
+
+    <div class="w3-col m6">
+      <img src="Images/Projects/Skurre.png" class="project-img" alt="Photo">
+      <h4 class="w3-text-white">
+        <a href="https://store.steampowered.com/app/3645280/Night_of_the_Living_Skurre/" target="_blank">Night of the Living Skurre (2025)</a>
+      </h4>
+      <p class="w3-text-white">
+        A 3D third person action-platformer made with Unity, where you play as a skurre on a quest to save their forest from a lumberjack company. 
+        Your goal is to drive the lumberjack insane by setting elaborate traps in their cabin or alternatively just pelting them with pinecones. 
+        <br> <br>
+        I worked on the logic for multiple traps and player-environment interactions, as well as setting up the environment in engine. 
+        Published on 
+        <a href="https://store.steampowered.com/app/3645280/Night_of_the_Living_Skurre/" target="_blank">Steam</a> and 
+        <a href="https://pibbrz.itch.io/night-of-the-living-skurre" target="_blank">itch.io</a>.
+
+      </p>
+    </div>
+
+    <div class="w3-col m6">
+      <img src="Images/Projects/CorpseCrafter.png" class="project-img" alt="Photo">      
+      <h4 class="w3-text-white">
+        <a href="https://adaras.itch.io/corpse-crafter" target="_blank">Corpse Crafter (2024)</a>
+      </h4>
+      <p class="w3-text-white">
+        A 2D mouse-controlled <span style="text-decoration: line-through;">tower</span> graveyard defence game. 
+        You must defend yourself against angry villagers by digging graves and creating zombies to fight for you. Made with Unity.
+        <br> <br>
+        Gameplay programming of various features in a small team of four people. 
+        First time rigging and making character animations using Unitys animation system. Published on 
+        <a href="https://adaras.itch.io/joy-depress" target="_blank">itch.io</a>.
+
+      </p>
+    </div>
+
+    <div class="w3-col m6">
+      <img src="Images/Projects/EverhartApp.png" class="project-img" alt="Photo">      
+      <h4 class="w3-text-white">The Everhart Manor (2024)</h4>
+      <p class="w3-text-white">
+        A Top-down 2D mobile game for android, where you explore an old mansion and catch ghosts. Story-driven with puzzles and environment interactions. 
+        Made with Unity.
+        <br> <br>
+        I was the lead programmer and in charge of many of the interactable puzzles and game progression logic.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Contact Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide w3-monospace">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-32" id="contact">
+  <h3 class="w3-center w3-text-white">Let's get in touch! :)</h3>
+  <p class="w3-center  w3-large w3-text-white"><em>Feel free to contact me on LinkedIn and check out my projects at GitHub and itch.io. <br> Just click on the icons below!</em></p>
+  <div class="w3-row w3-padding-large w3-section">
+    <div class="w3-center w3-xxxlarge w3-section">
+        <a href="https://linkedin.com/in/petra-s-416786196" target="_blank"><img class="icon w3-hover-opacity" src="Images/Logos/linkedin.svg"/></a>
+        <a href="https://github.com/petuleipa" target="_blank"><img class="icon w3-hover-opacity" src="Images/Logos/github.svg" /></a>
+        <a href="https://petuau.itch.io/" target="_blank"><img src="Images/Logos/itchio.svg" class="icon w3-hover-opacity"/></a>
+      </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button border w3-text-black w3-hover-pink"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-pink">w3.css</a></p>
+</footer>
+ 
+</body>
+
